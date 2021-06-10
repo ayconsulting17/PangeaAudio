@@ -117,6 +117,7 @@ dist
 /Extension/.yo-rc.json
 /Extension/javascript-libs.js
 /Extension/DeployDistribution/**
+/Extension/DeployDistribution/**
 
 Extension/ns_npm_repository
 
