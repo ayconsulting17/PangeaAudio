@@ -1,0 +1,35 @@
+{
+	"name": "MoveCheckoutDeliveryModule",
+	"fantasyName": "MoveCheckoutDeliveryModule",
+	"vendor": "JHM",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Moves delivery selection module to billing step in standard checkout flow",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/MoveCheckoutDeliveryModule/JavaScript/JHM.MoveCheckoutDeliveryModule.MoveCheckoutDeliveryModule.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/MoveCheckoutDeliveryModule/JavaScript/JHM.MoveCheckoutDeliveryModule.MoveCheckoutDeliveryModule.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/JHM/MoveCheckoutDeliveryModule@1.0.0",
+	"activation_id": "5",
+	"extension_id": "1901"
+}

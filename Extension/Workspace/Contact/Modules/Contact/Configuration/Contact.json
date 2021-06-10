@@ -1,0 +1,25 @@
+{
+	"type": "object",
+
+	"subtab": {
+		"id": "contactForm",
+		"title": "Contact Form",
+		"group": "shoppingApplication"
+	},
+
+	"properties": {
+		"contactForm.externalUrl": {
+			"group": "shoppingApplication",
+			"subtab": "contactForm",
+			"type": "string",
+			"title": "Case Form External URL"
+		},
+		"contactForm.descriptionText": {
+			"group": "shoppingApplication",
+			"subtab": "contactForm",
+			"type": "string",
+			"title": "Case Form Description Text",
+			"nsType": "textarea"
+		}
+	}
+}

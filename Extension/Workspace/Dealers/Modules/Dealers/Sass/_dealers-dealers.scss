@@ -1,0 +1,108 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+#dealers-page {
+  @extend .container;
+  position: relative;
+
+  h1 {
+    border-bottom: 2px solid $sapphire;
+  }
+  h2 {
+    margin-top: $sc-margin-lv4;
+  }
+
+  .header {
+    font-weight: $sc-font-weight-bold;
+
+    @media (max-width: $screen-sm-max) {
+      display: none;
+    }
+  }
+
+  .dealer-info-link {
+    cursor: pointer;
+
+    &:hover, &:active, &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  .dealer-container {
+    @extend .container;
+    margin-bottom: $sc-margin-lv4;
+
+    // Each row displayed
+    > div {
+      @extend .row;
+      padding: $sc-padding-lv2 0;
+      border-top: 1px solid #ddd;
+
+      &:nth-child(odd) {
+        background: #f9f9f9;
+      }
+
+
+      // Each column displayed
+      > div {
+        @extend .col-md-2;
+
+        &.company, &.url {
+          @extend .col-md-3;
+        }
+
+        &.country {
+          width: 20%;
+        }
+
+        &.brands {
+          @extend .col-md-1;
+          font-weight: $sc-font-weight-bold;
+        }
+      }
+    }
+  }
+
+  ul#dealers-legend {
+
+    text-align: right;
+    font-weight: $sc-font-weight-bold;
+
+    li {
+      display: inline-block;
+      padding-left: $sc-padding-lv4;
+
+    }
+  }
+}
+
+#in-modal-dealer-info {
+
+  border-top: 1px solid #ddd;
+  width: 100%;
+
+  tr {
+    border-bottom: 1px solid #ddd;
+
+    &:nth-child(odd) {
+      background: #f9f9f9;
+    }
+
+    td:first-child {
+      font-weight: $sc-font-weight-bold;
+      width: 25%;
+    }
+
+    td {
+      padding: $sc-padding-lv3 0 $sc-padding-lv3 $sc-padding-lv2;
+    }
+  }
+
+
+}

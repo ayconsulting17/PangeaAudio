@@ -1,0 +1,107 @@
+///*
+//    Example sass file
+//    Use:
+//        * url(getExtensionAssetsPath('img/image.jpg')); to reference images and fonts in your assets folder
+//        * url(getThemeAssetsPath('img/theme-image.jpg')); to reference images and fonts in the active theme available
+//*/
+
+
+#news-page, #news-single {
+  @extend .container;
+  position: relative;
+
+  h1 {
+    border-bottom: 2px solid $sapphire;
+  }
+}
+
+#news-single {
+  .date {
+    font-style: italic;
+  }
+
+  img {
+    float: right;
+    margin: 0 0 $sc-margin-lv2 $sc-margin-lv3;
+    max-width: 450px;
+    width: 50%;
+
+    @media (max-width: $screen-xs-min) {
+      float: none;
+      margin: auto;
+      width: 100%;
+    }
+  }
+}
+
+#homepage-news {
+  padding: $sc-padding-base * 6 0;
+}
+
+#homepage-news, #news-page {
+
+  padding-top: $sc-padding-base * 6;
+  padding-bottom: $sc-padding-base * 6;
+
+  .homepage-news-container {
+    padding: $sc-padding-lv4 0 $sc-padding-lv2;
+    border-bottom: 1px solid $gallery;
+
+    .homepage-news-details {
+      overflow: hidden;
+    }
+  }
+
+  h2, h3 {
+    color: $cloud-burst;
+  }
+
+  h2 {
+    font-size: $sc-font-size-xxxl;
+  }
+
+  h3 {
+    font-weight: $sc-font-weight-normal;
+  }
+
+  .news-short-desc {
+    @extend .col-sm-9;
+    padding-left: 0;
+    color: $tundora;
+  }
+  .news-date {
+    @extend .col-sm-3;
+    padding-right: 0;
+    text-align: right;
+    color: $cloud-burst;
+    float: right;
+  }
+
+  @media(max-width: $screen-xs-max) {
+    .news-date {
+      float: left;
+      padding-left: 0;
+    }
+    .news-short-desc {
+      clear: left;
+    }
+    .news-button-container {
+      text-align: center;
+    }
+  }
+
+}
+
+#read-more-news-button {
+  padding: $sc-padding-lv2 $sc-padding-lv3;
+  border-radius: 8px;
+  border: 1px solid $cloud-burst;
+  display: inline-block;
+  color: $cloud-burst;
+  font-size: $sc-font-size-xl;
+  margin: $sc-margin-lv6 0;
+
+  &:hover, &:active {
+    color: $cyan;
+  }
+}

@@ -1,0 +1,31 @@
+/*
+    Example sass file
+    Use:
+        * url(getExtensionAssetsPath('img/image.jpg')); to reference images and fonts in your assets folder
+        * url(getThemeAssetsPath('img/theme-image.jpg')); to reference images and fonts in the active theme available
+*/
+.warning-icon-msg-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+
+    .warning-icon, .warning-text {
+      display: inline-block;
+    }
+
+    .warning-icon {
+      padding: $sc-padding-base $sc-padding-lv2 $sc-padding-lv2 0;
+      width: 40px;
+      min-width: 40px;
+
+      @media(max-width: $screen-xs-min) {
+        width: 50px;
+        min-width: 50px;
+      }
+    }
+
+    .warning-text {
+      vertical-align: top;
+      overflow: hidden;
+    }
+}

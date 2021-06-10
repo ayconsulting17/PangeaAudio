@@ -1,0 +1,67 @@
+{
+	"name": "Dealers",
+	"fantasyName": "Dealers",
+	"vendor": "JHM",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Dealers page",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/Dealers.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Dealers/Templates/jhm_dealers_dealers.tpl",
+					"Modules/Dealers/Templates/jhm_dealers_info.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Dealers/Sass/_dealers-dealers.scss"
+		},
+		"files": [
+			"Modules/Dealers/Sass/_dealers-dealers.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Dealers/JavaScript/JHM.Dealers.Dealers.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Dealers/JavaScript/JHM.Dealers.Dealers.js",
+					"Modules/Dealers/JavaScript/Dealers.View.js",
+					"Modules/Dealers/JavaScript/Dealers.Router.js",
+					"Modules/Dealers/JavaScript/Dealers.Model.js",
+					"Modules/Dealers/JavaScript/Dealers.Info.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Dealers/SuiteScript/JHM.Dealers.Dealers.js",
+		"files": [
+			"Modules/Dealers/SuiteScript/JHM.Dealers.Dealers.js",
+			"Modules/Dealers/SuiteScript/Dealers.ServiceController.js",
+			"Modules/Dealers/SuiteScript/Dealers.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/JHM/Dealers@1.0.0",
+	"activation_id": "5",
+	"extension_id": "1401"
+}

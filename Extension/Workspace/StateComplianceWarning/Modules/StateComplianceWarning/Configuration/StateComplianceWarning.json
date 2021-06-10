@@ -1,0 +1,38 @@
+{
+	"type": "object",
+
+	"subtab": {
+		"id": "stateWarnings",
+		"title": "State Product Compliance Warnings",
+		"group": "layout"
+	},
+
+	"properties": {
+		"stateWarnings.californiaIcon": {
+			"group": "layout",
+			"subtab": "stateWarnings",
+			"type": "string",
+			"title": "Icon for CA Prop 65 warning",
+			"mandatory": true
+		},
+		"stateWarnings.californiaMessage": {
+			"group": "layout",
+			"subtab": "stateWarnings",
+			"type": "string",
+			"title": "Text for CA Prop 65 warning",
+			"mandatory": true
+		},
+		"stateWarnings.californiaLink": {
+			"group": "layout",
+			"subtab": "stateWarnings",
+			"type": "string",
+			"title": "Link to be displayed in CA Prop 65 warning"
+		},
+		"stateWarnings.californiaLinkText": {
+			"group": "layout",
+			"subtab": "stateWarnings",
+			"type": "string",
+			"title": "Text to be displayed in CA Prop 65 link"
+		}
+	}
+}

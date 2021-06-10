@@ -1,0 +1,94 @@
+{
+	"type": "object",
+	"subtab": "home",
+	"properties": {
+		"home.customBuckets": {
+			"group": "layout",
+			"type": "array",
+			"title": "Homepage Buckets",
+			"description": "Homepage bucket items",
+			"items": {
+				"type": "object",
+				"properties": {
+					"title": {
+						"type": "string",
+						"title": "Title"
+					},
+					"image": {
+						"type": "string",
+						"title": "Image"
+					},
+					"text": {
+						"type": "string",
+						"title": "Text",
+						"nsType": "textarea"
+					},
+					"link": {
+						"type": "string",
+						"title": "Absolute URL (external links)"
+					},
+					"hashtag": {
+						"type": "string",
+						"title": "Hashtag (internal links)"
+					},
+					"touchpoint": {
+						"type": "string",
+						"title": "Touchpoint (for internal links)",
+						"enum": ["", "home"]
+					},
+					"target": {
+						"type": "string",
+						"title": "Target (for external links)",
+						"enum": ["", "_blank"]
+					}
+				}
+			},
+			"default": []
+		},
+
+		"home.customSliders": {
+			"group": "layout",
+			"type": "array",
+			"title": "Custom Homepage Sliders",
+			"description": "Custom homepage slides",
+			"items": {
+				"type": "object",
+				"properties": {
+					"title": {
+						"type": "string",
+						"title": "Title"
+					},
+					"image": {
+						"type": "string",
+						"title": "Image"
+					},
+					"backgroundImage": {
+						"type": "string",
+						"title": "Background Image"
+					},
+					"slideTextColor": {
+						"type": "string",
+						"title": "Slide Text Color",
+						"enum": ["light", "dark"],
+						"default": "light"
+					},
+					"text": {
+						"type": "string",
+						"title": "Text",
+						"nsType": "textarea"
+					},
+					"link": {
+						"type": "string",
+						"title": "URL/Hashtag"
+					},
+					"buttonText": {
+						"type": "string",
+						"title": "Button text",
+						"default": "Shop Now"
+					}
+				}
+			},
+			"default": []
+		}
+	}
+}

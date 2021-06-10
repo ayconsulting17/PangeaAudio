@@ -1,0 +1,36 @@
+{
+	"name": "Products",
+	"fantasyName": "Products",
+	"vendor": "JHM",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Products",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Products/JavaScript/JHM.Products.Products.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Products/JavaScript/JHM.Products.Products.js",
+					"Modules/Products/JavaScript/JHM.Products.Item.KeyMapping.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/JHM/Products@1.0.0",
+	"activation_id": "5",
+	"extension_id": "1101"
+}
