@@ -108,6 +108,7 @@ dist
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
 /Extension/gulp
+/Extension/gulp
 /Extension/ns_npm_repository
 /Extension/Workspace/Extras
 /Extension/package.json
