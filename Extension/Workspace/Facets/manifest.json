@@ -1,0 +1,35 @@
+{
+	"name": "Facets",
+	"fantasyName": "Facets",
+	"vendor": "JHM",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Facets",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Facets/JavaScript/JHM.Facets.Facets.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Facets/JavaScript/JHM.Facets.Facets.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/JHM/Facets@1.0.0",
+	"activation_id": "5",
+	"extension_id": "1001"
+}

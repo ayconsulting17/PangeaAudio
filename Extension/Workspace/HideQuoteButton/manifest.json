@@ -1,0 +1,35 @@
+{
+	"name": "HideQuoteButton",
+	"fantasyName": "HideQuoteButton",
+	"vendor": "JHM",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Hides quote button for users without permission",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/HideQuoteButton/JavaScript/JHM.HideQuoteButton.HideQuoteButton.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/HideQuoteButton/JavaScript/JHM.HideQuoteButton.HideQuoteButton.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/JHM/HideQuoteButton@1.0.0",
+	"activation_id": "5",
+	"extension_id": "1301"
+}

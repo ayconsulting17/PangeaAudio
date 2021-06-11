@@ -1,0 +1,47 @@
+{
+	"name": "Moment",
+	"fantasyName": "Moment",
+	"vendor": "JHM",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "2.22.2",
+	"description": "Moment.js",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Moment/JavaScript/Moment.js",
+			"myaccount": "Modules/Moment/JavaScript/Moment.js",
+			"checkout": "Modules/Moment/JavaScript/Moment.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Moment/JavaScript/Moment.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Moment/JavaScript/Moment.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Moment/JavaScript/Moment.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/JHM/Moment@2.22.2",
+	"activation_id": "5",
+	"extension_id": "701"
+}

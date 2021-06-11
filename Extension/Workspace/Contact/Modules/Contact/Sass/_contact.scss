@@ -1,0 +1,92 @@
+/*
+    Example sass file
+    Use:
+        * url(getExtensionAssetsPath('img/image.jpg')); to reference images and fonts in your assets folder
+        * url(getThemeAssetsPath('img/theme-image.jpg')); to reference images and fonts in the active theme available
+*/ 
+#contact-page {
+  @extend .container;
+  position: relative;
+
+  h1 {
+    border-bottom: 2px solid $sapphire;
+  }
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .contact-text {
+    margin-bottom: $sc-margin-lv4;
+  }
+
+
+  .form-section-wrapper {
+    overflow: hidden;
+
+    .error-wrapper {
+      @extend .col-sm-9;
+      padding-left: 0;
+
+      @media (min-width: $screen-sm-min) {
+        float: right;
+      }
+    }
+  }
+
+  .form-field-wrapper {
+    float: right;
+    width: 100%;
+    margin-bottom: $sc-margin-lv3;
+
+    label, input, select, textarea {
+      display: inline-block;
+    }
+    label {
+      @extend .col-sm-3;
+      text-align: right;
+
+      @media (max-width: $screen-xs-max) {
+        padding-left: 0;
+      }
+
+      @media (min-width: $screen-sm-min) {
+        line-height: 40px;
+      }
+    }
+
+    input, select, textarea, .button-container {
+      @extend .col-sm-9;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      select {
+        display: block;
+        min-width: 200px;
+      }
+    }
+    .button-container {
+      padding-left: 0;
+    }
+
+    button {
+      padding: $sc-padding-base $sc-padding-lv2;
+      margin-right: $sc-margin-lv2;
+
+      &.submit-button {
+        @extend .button-primary;
+        padding: $sc-padding-lv2 $sc-padding-lv5;
+        font-size: $sc-font-size-xl;
+        display: block;
+        margin-bottom: $sc-margin-lv2;
+      }
+
+      &.reset-button {
+        @extend .button-secondary;
+      }
+
+
+    }
+  }
+}

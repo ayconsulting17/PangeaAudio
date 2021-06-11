@@ -1,0 +1,89 @@
+{
+	"name": "DealerPriceListPage",
+	"fantasyName": "DealerPriceListPage",
+	"vendor": "JHM",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Adds dealer/distributor price list page to My Acct",
+	"assets": {
+		"img": {
+			"files": [
+				"img/custom-tooltip-bg.png"
+			]
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/DealerPriceListPage.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/DealerPriceListPage/Configuration/DealerPriceListPage.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/DealerPriceListPage/Templates/jhm_dealerpricelistpage_dealerpricelistpage.tpl",
+					"Modules/DealerPriceListPage/Templates/jhm_dealerpricelistpage_header_menu_myacct.tpl"
+				]
+			},
+			"shopping": {
+				"files": [
+					"Modules/DealerPriceListPage/Templates/jhm_dealerpricelistpage_dealerpricelistpage.tpl",
+					"Modules/DealerPriceListPage/Templates/jhm_dealerpricelistpage_header_menu_myacct.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/DealerPriceListPage/Sass/_dealerpricelistpage-dealerpricelistpage.scss",
+			"shopping": "Modules/DealerPriceListPage/Sass/_dealerpricelistpage-dealerpricelistpage.scss"
+		},
+		"files": [
+			"Modules/DealerPriceListPage/Sass/_dealerpricelistpage-dealerpricelistpage.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/DealerPriceListPage/JavaScript/JHM.DealerPriceListPage.DealerPriceListPage.js",
+			"shopping": "Modules/DealerPriceListPage/JavaScript/JHM.DealerPriceListPage.DealerPriceListPage.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/DealerPriceListPage/JavaScript/JHM.DealerPriceListPage.DealerPriceListPage.js",
+					"Modules/DealerPriceListPage/JavaScript/DealerPriceListPage.View.js",
+					"Modules/DealerPriceListPage/JavaScript/DealerPriceListPage.Router.js",
+					"Modules/DealerPriceListPage/JavaScript/DealerPriceListPage.Model.js"
+				]
+			},
+			"shopping": {
+				"files": [
+					"Modules/DealerPriceListPage/JavaScript/JHM.DealerPriceListPage.DealerPriceListPage.js",
+					"Modules/DealerPriceListPage/JavaScript/DealerPriceListPage.View.js",
+					"Modules/DealerPriceListPage/JavaScript/DealerPriceListPage.Router.js",
+					"Modules/DealerPriceListPage/JavaScript/DealerPriceListPage.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/DealerPriceListPage/SuiteScript/JHM.DealerPriceListPage.DealerPriceListPage.js",
+		"files": [
+			"Modules/DealerPriceListPage/SuiteScript/JHM.DealerPriceListPage.DealerPriceListPage.js",
+			"Modules/DealerPriceListPage/SuiteScript/DealerPriceListPage.ServiceController.js",
+			"Modules/DealerPriceListPage/SuiteScript/DealerPriceListPage.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/JHM/DealerPriceListPage@1.0.0",
+	"activation_id": "5",
+	"extension_id": "2401"
+}

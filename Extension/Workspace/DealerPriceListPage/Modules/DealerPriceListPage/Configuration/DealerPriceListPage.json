@@ -1,0 +1,20 @@
+{
+  "type": "object",
+
+  "subtab": {
+    "id": "dealerPriceListPage",
+    "title": "Dealer Price List Page",
+    "group": "myAccountApp"
+  },
+
+  "properties": {
+
+    "dealerPriceListPage.descriptionText": {
+      "group": "myAccountApp",
+      "subtab": "dealerPriceListPage",
+      "type": "string",
+      "title": "Dealer Price List Page Description Text",
+      "nsType": "textarea"
+    }
+  }
+}
