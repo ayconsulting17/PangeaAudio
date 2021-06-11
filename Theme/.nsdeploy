@@ -1,0 +1,15 @@
+{
+    "credentials": {
+        "user_agent": "sc-theme-devtools/2021.1.0",
+        "authID": "PANGEA_SB2",
+        "key": "446765bc51e70086cf582d32f0486fc0a764354ffec6c983b94e63af331346c4",
+        "secret": "97fda39654d2f0cf3f0f9011d97616f96a3136e2c7659b867e57a1e1bbbcc566",
+        "account": "5035704_SB2",
+        "hostname": "5035704-SB2.restlets.api.netsuite.com",
+        "website": 2,
+        "domain": "test.pangeaaudio.com",
+        "webapp_id": "12220",
+        "ssp_folder": "12220",
+        "is_scis": false
+    }
+}

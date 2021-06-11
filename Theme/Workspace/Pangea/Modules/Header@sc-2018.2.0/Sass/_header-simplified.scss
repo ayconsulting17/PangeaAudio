@@ -1,0 +1,13 @@
+.header-simplified-header{
+	background-color: $sc-top-menu-background-color;
+	padding: $sc-padding-lv4 0;
+}
+
+.header-simplified-header-logo{
+	text-align: center;
+
+	.header-logo-image{
+		width: auto;
+	}
+}
+
