@@ -1,0 +1,41 @@
+.item-relations-related {
+	position: relative;
+}
+
+.item-relations-related .bx-controls-direction {
+    text-align: right;
+	margin-bottom: $sc-margin-lv3;
+}
+.item-relations-related h3 {
+    margin-bottom: $sc-margin-lv8;
+}
+
+.item-relations-related .global-views-star-rating {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+
+.item-relations-related-carousel-next, .item-relations-related-carousel-prev {
+	cursor:pointer;
+	cursor:hand;
+	position:absolute;
+	top:45%;
+	font-size: 3rem;
+}
+
+.item-relations-related-carousel-next{
+	margin-left:$sc-margin-lv2;
+	right:0px;
+}
+
+.item-relations-related-carousel-prev{
+	left:0px;
+}
+.item-relations-related-carousel-next.disabled,
+.item-relations-related-carousel-prev.disabled {
+	display: none;
+}
+.control-text{
+	display:none;
+}

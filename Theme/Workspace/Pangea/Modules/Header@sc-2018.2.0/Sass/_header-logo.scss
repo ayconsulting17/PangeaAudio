@@ -1,0 +1,26 @@
+.header-logo {
+	display: block;
+
+	@media (max-width: $screen-xs-min) {
+		max-width: 100%;
+	}
+
+	@media (max-width: $screen-sm-max) {
+		text-align: center;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		width: 100%;
+		margin: 0 $sc-margin-base * 10 0 0;
+	}
+}
+
+.header-logo-image {
+	vertical-align: middle;
+
+	@media (min-width: $screen-md-min) {
+		width: auto;
+	}
+}
+
+
