@@ -1,0 +1,70 @@
+{
+	"name": "Manuals",
+	"fantasyName": "Manuals",
+	"vendor": "JHM",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Manuals",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/Manuals.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Manuals/Templates/manuals_page.tpl",
+					"Modules/Manuals/Templates/manuals_single_item.tpl",
+					"Modules/Manuals/Templates/manuals_product.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Manuals/Sass/_manuals-manuals.scss"
+		},
+		"files": [
+			"Modules/Manuals/Sass/_manuals-manuals.scss",
+			"Modules/Manuals/Sass/_manuals.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Manuals/JavaScript/JHM.Manuals.Manuals.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Manuals/JavaScript/JHM.Manuals.Manuals.js",
+					"Modules/Manuals/JavaScript/Manuals.Router.js",
+					"Modules/Manuals/JavaScript/Manuals.Model.js",
+					"Modules/Manuals/JavaScript/Manuals.Page.View.js",
+					"Modules/Manuals/JavaScript/Manuals.Single.View.js",
+					"Modules/Manuals/JavaScript/Manuals.Product.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Manuals/SuiteScript/JHM.Manuals.Manuals.js",
+		"files": [
+			"Modules/Manuals/SuiteScript/JHM.Manuals.Manuals.js",
+			"Modules/Manuals/SuiteScript/Manuals.ServiceController.js",
+			"Modules/Manuals/SuiteScript/Manuals.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/JHM/Manuals@1.0.0",
+	"activation_id": "5",
+	"extension_id": "601"
+}

@@ -1,0 +1,97 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "footer",
+        "title": "Footer",
+        "description": "Footer settings",
+        "docRef": "bridgehead_4393101142",
+        "group": "layout"
+    },
+    "properties": {
+
+        "footer.phone": {
+            "group": "layout",
+            "subtab": "footer",
+            "type": "string",
+            "title": "Phone Number",
+            "description": "Phone Number"
+        },
+
+        "footer.fax": {
+            "group": "layout",
+            "subtab": "footer",
+            "type": "string",
+            "title": "Fax Number",
+            "description": "Fax Number"
+        },
+
+        "footer.email": {
+            "group": "layout",
+            "subtab": "footer",
+            "type": "string",
+            "title": "Email",
+            "description": "Email"
+        },
+
+        "footer.address1": {
+            "group": "layout",
+            "subtab": "footer",
+            "type": "string",
+            "title": "Address line 1",
+            "description": "Address line 1"
+        },
+
+        "footer.address2": {
+            "group": "layout",
+            "subtab": "footer",
+            "type": "string",
+            "title": "Address line 2",
+            "description": "Address line 2"
+        },
+
+        "footer.company": {
+            "group": "layout",
+            "subtab": "footer",
+            "type": "string",
+            "title": "Company Name",
+            "description": "Company Name"
+        },
+
+        "footer.navigationLinks": {
+            "group": "layout",
+            "subtab": "footer"
+        , "type": "array"
+        , "title": "Footer navigation"
+        , "description": "Footer navigation links that goes in the footer"
+        , "items": {
+                "type": "object"
+            , "properties": {
+                    "text": {
+                        "type": "string"
+                    , "title": "Text"
+                    , "description": ""
+                    }
+                , "href": {
+                        "type": "string"
+                    , "title": "URL"
+                    , "description": ""
+                    }
+                }
+            }
+        , "default": [
+                {
+                    "text": "Link a"
+                , "href": "#"
+                }
+            , {
+                    "text": "Link b"
+                , "href": "#"
+                }
+            , {
+                    "text": "Link c"
+                , "href": "#"
+                }
+            ]
+        }
+      }
+}

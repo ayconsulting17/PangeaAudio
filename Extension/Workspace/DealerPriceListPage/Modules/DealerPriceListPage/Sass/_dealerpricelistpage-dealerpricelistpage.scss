@@ -1,0 +1,191 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/
+
+.dealer-price-list {
+
+  ul {
+    padding-left: 0;
+  }
+
+  p {
+    margin-bottom: $sc-margin-lv5;
+  }
+}
+
+.manual-link, .manual-link-disabled {
+  display: inline-block;
+  overflow: hidden;
+  padding: $sc-padding-base $sc-padding-lv2;
+  text-align: left;
+  border-radius: 4px;
+  width: 93%;
+  max-width: 380px;
+  margin-bottom: $sc-margin-base;
+
+  .filesize {
+    float: right;
+  }
+
+  .file-icon {
+    @extend .fa;
+    @extend %fa-file;
+    margin-right: $sc-margin-base;
+  }
+}
+
+.manual-link {
+  color: $sc-color-copy-dark;
+  border: 1px solid #ccc;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #b3b3b3;
+  background-image: linear-gradient(to bottom, #fff, #e6e6e6);
+  background-repeat: repeat-x;
+
+  &:hover, &:active {
+    background-position: 0 -15px;
+    background-color: #e6e6e6;
+    color: $sc-color-copy-dark;
+  }
+}
+
+.manual-link-disabled {
+  background-color: #344fb7;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover, &:active {
+    color: #fff;
+  }
+}
+
+.disabled-link-wrapper {
+  position: relative;
+
+
+  .custom-tooltip {
+    position: absolute;
+    width: 43%;
+    right: 9%;
+    background-color: #dc281b;
+    border-radius: 15px;
+    padding: $sc-padding-lv3 $sc-padding-lv3 0;
+    display: none;
+    z-index: 1;
+
+    @media (min-width: $screen-md-min) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      right: 0;
+      width: 42%;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      left: 0;
+      width: 93%;
+      max-width: 380px;
+      margin-top: $sc-margin-base * 11;
+
+      .close-tooltip {
+        margin-top: 0;
+      }
+    }
+
+    p {
+      color: #fff;
+      margin-bottom: 0;
+      position: relative;
+
+      &.custom-tooltip-header {
+        margin-bottom: $sc-margin-lv3;
+        font-weight: $sc-font-weight-bold;
+      }
+
+      &.custom-tooltip-message {
+        line-height: 18px;
+      }
+    }
+
+    a {
+      color: #fff;
+      font-weight: $sc-font-weight-bold;
+
+      &:hover, &:active, &:focus {
+        color: #fff;
+      }
+    }
+
+    // Oversized background image
+    &:before {
+      content: '';
+      position: absolute;
+      background-image: url(getExtensionAssetsPath('img/custom-tooltip-bg.png'));
+      background-position: left -24px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 190px;
+      height: 100%;
+      top: 0;
+      left: -10px;
+
+      @media (min-width: $screen-lg-min) {
+        background-position: left -33px;
+      }
+    }
+
+    // Arrow
+    &:after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+
+      @media (min-width: $screen-md-min) {
+        border-width: 22px 22px 22px 0;
+        border-color: transparent #dc281b transparent transparent;
+        left: -18px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      @media (max-width: $screen-sm-max) {
+        border-width: 0 22px 22px 22px;
+        border-color: transparent transparent #dc281b transparent;
+        top: -22px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &.active {
+      display: inline-block;
+      z-index: 1001;
+    }
+
+    .close-tooltip {
+      position: relative;
+      cursor: pointer;
+      color: #fff;
+      font-weight: $sc-font-weight-bold;
+      font-size: $sc-font-size-xl;
+      float: right;
+      padding: 0 $sc-padding-lv2 $sc-padding-base;
+      margin-top: -$sc-margin-lv3;
+      margin-right: -$sc-margin-lv2;
+    }
+  }
+
+}
+
+.header-menu-profile .fake-level-2 {
+  padding-top: 0;
+}

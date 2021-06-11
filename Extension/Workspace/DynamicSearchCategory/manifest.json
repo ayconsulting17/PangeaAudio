@@ -1,0 +1,51 @@
+{
+	"name": "DynamicSearchCategory",
+	"fantasyName": "DynamicSearchCategory",
+	"vendor": "JHM",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Sets category to display items returned from saved search",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/DynamicSearchCategory.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/DynamicSearchCategory/Configuration/DynamicSearchCategory.json"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/DynamicSearchCategory/JavaScript/JHM.DynamicSearchCategory.DynamicSearchCategory.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/DynamicSearchCategory/JavaScript/JHM.DynamicSearchCategory.DynamicSearchCategory.js",
+					"Modules/DynamicSearchCategory/JavaScript/DynamicSearchCategory.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/DynamicSearchCategory/SuiteScript/JHM.DynamicSearchCategory.DynamicSearchCategory.js",
+		"files": [
+			"Modules/DynamicSearchCategory/SuiteScript/JHM.DynamicSearchCategory.DynamicSearchCategory.js",
+			"Modules/DynamicSearchCategory/SuiteScript/DynamicSearchCategory.ServiceController.js",
+			"Modules/DynamicSearchCategory/SuiteScript/DynamicSearchCategory.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/JHM/DynamicSearchCategory@1.0.0",
+	"activation_id": "5",
+	"extension_id": "2101"
+}

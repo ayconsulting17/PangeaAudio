@@ -1,0 +1,22 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.itemssearcher-item-results {
+
+  .sku-container {
+
+    margin-top: $sc-margin-lv4;
+
+    .sku {
+      float: right;
+      margin-right: $sc-margin-lv4;
+    }
+  }
+
+}

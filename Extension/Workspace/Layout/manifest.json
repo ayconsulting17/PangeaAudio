@@ -1,0 +1,82 @@
+{
+	"name": "Layout",
+	"fantasyName": "Layout",
+	"vendor": "JHM",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Layout Customizations",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/Layout.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Footer/Configuration/Footer.Custom.json",
+			"Modules/Home/Configuration/Home.Custom.json"
+		]
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Layout/Sass/_layout-layout.scss",
+			"myaccount": "Modules/Layout/Sass/_layout-layout.scss",
+			"checkout": "Modules/Layout/Sass/_layout-layout.scss"
+		},
+		"files": [
+			"Modules/Layout/Sass/_layout-layout.scss",
+			"Modules/Layout/Sass/_layout.scss",
+			"Modules/Home/Sass/_layout-home.scss",
+			"Modules/Home/Sass/_home.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Layout/JavaScript/JHM.Layout.Layout.js",
+			"myaccount": "Modules/Layout/JavaScript/JHM.Layout.Layout.js",
+			"checkout": "Modules/Layout/JavaScript/JHM.Layout.Layout.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Layout/JavaScript/JHM.Layout.Layout.js",
+					"Modules/Footer/JavaScript/JHM.Layout.Footer.js",
+					"Modules/Home/JavaScript/JHM.Layout.Home.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Layout/JavaScript/JHM.Layout.Layout.js",
+					"Modules/Footer/JavaScript/JHM.Layout.Footer.js",
+					"Modules/Home/JavaScript/JHM.Layout.Home.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Layout/JavaScript/JHM.Layout.Layout.js",
+					"Modules/Footer/JavaScript/JHM.Layout.Footer.js",
+					"Modules/Home/JavaScript/JHM.Layout.Home.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Layout/SuiteScript/JHM.Layout.Layout.js",
+		"files": [
+			"Modules/Layout/SuiteScript/JHM.Layout.Layout.js",
+			"Modules/Layout/SuiteScript/Layout.ServiceController.js",
+			"Modules/Layout/SuiteScript/Layout.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/JHM/Layout@1.0.0",
+	"activation_id": "5",
+	"extension_id": "801"
+}

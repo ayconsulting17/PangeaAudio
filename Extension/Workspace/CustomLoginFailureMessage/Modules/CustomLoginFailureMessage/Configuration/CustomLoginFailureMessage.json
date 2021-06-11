@@ -1,0 +1,13 @@
+{
+  "type": "object",
+
+  "properties": {
+    "checkoutApp.customLoginFailureMessage": {
+      "group": "checkoutApp",
+      "type": "string",
+      "title": "Custom Login Failure Message",
+      "description": "Overrides default system login failure message",
+      "nsType": "textarea"
+    }
+  }
+}

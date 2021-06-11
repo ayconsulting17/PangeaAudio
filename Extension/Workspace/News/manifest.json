@@ -1,0 +1,75 @@
+{
+	"name": "News",
+	"fantasyName": "News",
+	"vendor": "JHM",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "News",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/News.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/News/Templates/news_homepage.tpl",
+					"Modules/News/Templates/news_homepage_single_item.tpl",
+					"Modules/News/Templates/news_page.tpl",
+					"Modules/News/Templates/news_single_item.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/News/Sass/_news-news.scss"
+		},
+		"files": [
+			"Modules/News/Sass/_news-news.scss",
+			"Modules/News/Sass/_news.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/News/JavaScript/JHM.News.News.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/News/JavaScript/JHM.News.News.js",
+					"Modules/News/JavaScript/News.Router.js",
+					"Modules/News/JavaScript/News.Model.js",
+					"Modules/News/JavaScript/News.Homepage.View.js",
+					"Modules/News/JavaScript/News.Homepage.Single.View.js",
+					"Modules/News/JavaScript/News.Page.View.js",
+					"Modules/News/JavaScript/News.Single.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/News/SuiteScript/JHM.News.News.js",
+		"files": [
+			"Modules/News/SuiteScript/JHM.News.News.js",
+			"Modules/News/SuiteScript/News.ServiceController.js",
+			"Modules/News/SuiteScript/News.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/JHM/News@1.0.0",
+	"activation_id": "5",
+	"extension_id": "101"
+}

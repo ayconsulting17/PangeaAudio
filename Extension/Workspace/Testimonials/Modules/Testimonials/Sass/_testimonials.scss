@@ -1,0 +1,101 @@
+/*
+    Example sass file
+    Use:
+        * url(getExtensionAssetsPath('img/image.jpg')); to reference images and fonts in your assets folder
+        * url(getThemeAssetsPath('img/theme-image.jpg')); to reference images and fonts in the active theme available
+*/
+///////////// Homepage widget
+#homepage-testimonials {
+
+  margin-top: $sc-margin-lv6;
+
+  .bx-wrapper, .bx-viewport {
+    height: auto !important;
+  }
+
+  .bx-pager {
+    position: relative !important;
+  }
+
+  .home-slide-main-container {
+    background: $gallery;
+    height: auto;
+
+    .body, .title, .author {
+      width: 80%;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .title {
+      font-family: 'Ubuntu', sans-serif;
+      color: $sapphire;
+      font-size: $sc-font-size-xxl;
+      border-bottom: 2px solid $sapphire;
+      margin-bottom: $sc-margin-lv2;
+    }
+    .author {
+      font-family: 'Ubuntu', sans-serif;
+      color: $silver-chalice;
+      font-size: $sc-font-size-l;
+    }
+    .body {
+      width: 80%;
+      margin-bottom: $sc-margin-lv2;
+    }
+  }
+
+  h2 {
+    color: $cloud-burst;
+    font-size: $sc-font-size-xxxl;
+  }
+
+  .home-gallery-prev-icon, .home-gallery-next-icon {
+    top: 20%;
+  }
+
+  @media (max-width: 600px) {
+
+    .home-gallery-prev-icon, .home-gallery-next-icon {
+      top: 40%;
+    }
+  }
+  @media (max-width: 500px) {
+    .bx-wrapper, .bx-viewport {
+
+      .home-gallery-prev-icon {
+        left: 5px;
+      }
+      .home-gallery-next-icon {
+        right: 5px;
+      }
+    }
+  }
+
+}
+
+
+////////// Testimonial page
+#testimonial-page {
+  //@extend .container;
+
+  // TODO: Refactor these out into theme styles
+  h1 {
+    color: $sapphire;
+    margin-bottom: $sc-margin-lv2;
+    padding-bottom: $sc-padding-lv2;
+    border-bottom: 2px solid $sapphire;
+    @extend .container;
+  }
+  h3 {
+    color: black;
+  }
+
+  .testimonial-single {
+    margin: $sc-margin-lv3 0;
+    padding: $sc-padding-lv3 0;
+
+    &:nth-child(even) {
+      background: $gallery;
+    }
+  }
+}
