@@ -11,11 +11,13 @@
   @extend .container;
   position: relative;
 
-  h1 {
+  .header-container {
     border-bottom: 2px solid $sapphire;
   }
   h2 {
-    margin-top: $sc-margin-lv4;
+    margin-top: 10px;
+    margin-left: 20px;
+    color:white;
   }
 
   .header {
@@ -35,6 +37,7 @@
   }
 
   .dealer-container {
+    width:100%;
     @extend .container;
     margin-bottom: $sc-margin-lv4;
 
@@ -62,7 +65,7 @@
         }
 
         &.brands {
-          @extend .col-md-1;
+          @extend .col-md-3;
           font-weight: $sc-font-weight-bold;
         }
       }
@@ -107,6 +110,68 @@
 
 }
 
-.company:hover{
-  color:#138cff
+.dealer-info-link{
+color:#138cff;
+
+&:hover{
+  color: #0019ff;
+  text-decoration: underline;
 }
+
+}
+
+.header-text {
+  display:inline-block;
+  float:right;
+  margin-top: 10px;
+  color:black;
+}
+
+.header-title{
+  text-align: left;
+  display: inline-block;
+  margin-bottom:0px;
+}
+
+.brands-value{
+  width:30% !important; 
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.dealers-expander-toggle-icon {
+  @extend .fa;
+	@extend %fa-angle-up;
+  float: right;
+  height: 44px;
+  line-height: 44px;
+  font-size: 30px;
+  color: #fff;
+  -webkit-transition: transform 300ms ease;
+  -o-transition: transform 300ms ease;
+  transition: transform 300ms ease;
+  margin-top: -40px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.dealers-expander-head{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dealers-expander-head-toggle{
+  background: #2E3C97;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px
+}
+
+.dealers-expander-head-toggle.collapsed .dealers-expander-toggle-icon {
+  transform:rotateX(0deg);
+  }
+  
+ .dealers-expander-toggle-icon {
+  transition:transform .5s;transform:rotateX(180deg);
+  }
