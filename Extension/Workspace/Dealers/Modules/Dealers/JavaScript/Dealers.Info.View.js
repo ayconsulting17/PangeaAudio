@@ -18,12 +18,10 @@ define('JHM.Dealers.Dealers.Info.View'
     ,   initialize: function(options)
         {
             this.dealerType = options.dealerType
-            console.log('options', options);
         }
 
     ,   getContext: function()
         {
-
             return {
                 model: this.model
             ,   isInternational: this.dealerType == 'international'

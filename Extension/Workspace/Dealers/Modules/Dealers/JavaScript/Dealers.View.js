@@ -19,6 +19,8 @@ define('JHM.Dealers.Dealers.View'
 {
 	'use strict';
 
+
+
 	// @class JHM.Dealers.Dealers.View @extends Backbone.View
 	return Backbone.View.extend({
 
@@ -30,6 +32,10 @@ define('JHM.Dealers.Dealers.View'
 
 	,	initialize: function(options)
 		{
+			$(".brands-value").text(function(i, val) {
+				return val.replace(/,/g, ", ");
+			});
+		
 			this.application = options.application;
 		}
 
@@ -38,15 +44,15 @@ define('JHM.Dealers.Dealers.View'
 		{
 			var results = this.model.get('results')
 			,	international = this.transformBrands(results.international)
-			,	domestic = this.transformBrands(results.domestic);
-
-			console.log('results', results);
-			console.log('international',international);
-			console.log('domestic', domestic);
+			,	domestic = this.transformBrands(results.domestic)
+			,	distributor = this.transformBrands(results.distributor)
+			,   showOpenedAccordion = Utils.isTabletDevice() || Utils.isDesktopDevice();
+			
 
 			return {
 				international: international
 			,	domestic: domestic
+			,   distributor:distributor
 			};
 		}
 
